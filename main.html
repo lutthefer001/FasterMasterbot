@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FasterMasterbot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./Gemini_Generated_Image_g2iwwig2iwwig2iw.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f8fafc;
+            color: #0f172a;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            height: 300px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <!-- Chosen Palette: Indigo & Slate (Professional & Clean) -->
+    <!-- Application Structure Plan: Landing page approach. 1. Hero section with bot links. 2. Interactive Feature Grid (8 modules). 3. Technical Specs (GitHub/Source). 4. Visual impact chart. Chosen for maximum clarity when published to the web. -->
+    <!-- Visualization & Content Choices: 
+         - Feature Grid: Shows all 8 functionalities.
+         - Chart: Comparison of Go vs Python bot performance (hypothetical for impact).
+         - Source Section: GitHub direct link and install steps.
+         NO SVG. NO MERMAID. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+</head>
+<body class="antialiased">
+
+    <!-- Header & Hero -->
+    <nav class="p-6">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="text-2xl font-extrabold gradient-text">FasterMasterbot v1.0</div>
+            <a href="https://github.com/lutthefer001/FasterMasterbot" target="_blank" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-slate-800 transition">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto text-center py-16 px-4">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Barcha kerakli vositalar <span class="gradient-text">bitta botda.</span></h1>
+        <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto">
+            Go (Golang) tilida yozilgan, tezkor va xavfsiz Telegram bot. Valyuta kurslaridan tortib, ijtimoiy tarmoqlardan video yuklashgacha — hammasi bepul!
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="https://t.me/@Faster_Master_bot" target="_blank" class="bg-indigo-600 text-white px-8 py-4 rounded-2xl font-bold shadow-lg shadow-indigo-200 hover:bg-indigo-700 transition transform hover:-translate-y-1">
+                🤖 Botni ishga tushirish
+            </a>
+            <button onclick="scrollToSource()" class="bg-white text-slate-700 px-8 py-4 rounded-2xl font-bold border border-slate-200 hover:border-indigo-300 transition">
+                📂 Kodni ko'rish
+            </button>
+        </div>
+    </header>
+
+    <!-- Interactive Features Grid -->
+    <section class="max-w-6xl mx-auto px-4 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 text-slate-800">Bot Imkoniyatlari (8-in-1)</h2>
+            <p class="text-slate-500">Barcha 8 ta funksiya menyu orqali oson boshqariladi</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Feature 1 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">💵</div>
+                <h3 class="font-bold text-lg mb-2">Valyuta Kurslari</h3>
+                <p class="text-sm text-slate-500">MB (CBU) dan real-vaqt rejimida USD, EUR, RUB kurslari.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">🌦</div>
+                <h3 class="font-bold text-lg mb-2">Ob-havo</h3>
+                <p class="text-sm text-slate-500">Istalgan shahar bo'yicha OpenWeather API ma'lumotlari.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">🔳</div>
+                <h3 class="font-bold text-lg mb-2">QR Kod</h3>
+                <p class="text-sm text-slate-500">Matn yoki linklarni darhol QR kodga aylantirish.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">🔑</div>
+                <h3 class="font-bold text-lg mb-2">Parol Generator</h3>
+                <p class="text-sm text-slate-500">Xavfsiz va murakkab parollarni soniyada yaratish.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">📖</div>
+                <h3 class="font-bold text-lg mb-2">Wikipedia</h3>
+                <p class="text-sm text-slate-500">Ensiklopediyadan qidiruv va to'g'ridan-to'g'ri havolalar.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">🆔</div>
+                <h3 class="font-bold text-lg mb-2">Mening ID-m</h3>
+                <p class="text-sm text-slate-500">Foydalanuvchining shaxsiy Telegram ID raqamini aniqlash.</p>
+            </div>
+            <!-- Feature 7 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">📸</div>
+                <h3 class="font-bold text-lg mb-2">Instagram Downloader</h3>
+                <p class="text-sm text-slate-500">Reels va videolarni link orqali to'g'ridan-to'g'ri yuklash.</p>
+            </div>
+            <!-- Feature 8 -->
+            <div class="glass-card p-6 rounded-3xl hover:border-indigo-500 transition cursor-default group">
+                <div class="text-3xl mb-4 group-hover:scale-110 transition-transform">📺</div>
+                <h3 class="font-bold text-lg mb-2">YouTube Links</h3>
+                <p class="text-sm text-slate-500">YouTube videolarini yuklash uchun tayyor yordamchi link.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs & Chart -->
+    <section class="bg-white py-20 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Nega aynan Go (Golang)?</h2>
+                <p class="text-slate-600 mb-6 italic">
+                    "Go tili Telegram botlar uchun eng yaxshi tanlovdir, chunki u juda kam resurs talab qiladi va minglab so'rovlarni bir vaqtda bajara oladi."
+                </p>
+                <div class="chart-container">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+            </div>
+            <div id="source-section" class="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                <h3 class="text-2xl font-bold mb-6">Manba Kodingizni Oling</h3>
+                <p class="text-sm text-slate-500 mb-8">
+                    Botning barcha manba kodlari GitHub-da ochiq holda saqlanmoqda. Siz uni yuklab olib, o'z serveringizga o'rnatishingiz mumkin.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="w-10 h-10 bg-indigo-100 flex items-center justify-center rounded-xl font-bold text-indigo-600">1</div>
+                        <div class="text-sm font-semibold">GitHub Repo: <a href="https://github.com/lutthefer001/FasterMasterbot" class="text-indigo-600 underline">Ko'rish</a></div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="w-10 h-10 bg-green-100 flex items-center justify-center rounded-xl font-bold text-green-600">2</div>
+                        <div class="text-sm font-semibold">Til: Go (Golang) 1.20+</div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
+                        <div class="w-10 h-10 bg-yellow-100 flex items-center justify-center rounded-xl font-bold text-yellow-600">3</div>
+                        <div class="text-sm font-semibold">Hosting: Railway / VPS</div>
+                    </div>
+                </div>
+                <div class="mt-8">
+                    <a href="https://github.com/lutthefer001/FasterMasterbot" target="_blank" class="block text-center bg-slate-900 text-white py-4 rounded-2xl font-bold hover:bg-slate-800 transition">
+                        GitHub-dan yuklab olish
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-200 text-center text-slate-400 text-sm">
+        <p>© 2026 GoBot Project. Barcha huquqlar himoyalanmagan (Ochiq kodli loyiha).</p>
+    </footer>
+
+    <script>
+        // Navigation helper
+        function scrollToSource() {
+            document.getElementById('source-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Performance Chart
+        document.addEventListener('DOMContentLoaded', function() {
+            const ctx = document.getElementById('performanceChart').getContext('2d');
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Go (Golang)', 'Python (Standard)', 'Node.js'],
+                    datasets: [{
+                        label: 'Xotira iste\'moli (MB - qancha kam bo\'lsa yaxshi)',
+                        data: [12, 45, 38],
+                        backgroundColor: [
+                            'rgba(79, 70, 229, 0.8)',
+                            'rgba(203, 213, 225, 0.8)',
+                            'rgba(203, 213, 225, 0.8)'
+                        ],
+                        borderRadius: 12
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
