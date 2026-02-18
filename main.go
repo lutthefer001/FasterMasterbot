@@ -16,8 +16,8 @@ import (
 // --- KONFIGURATSIYA ---
 const (
 	// MUHIM: @BotFather dan olingan yangi tokenni shu yerga qo'ying.
-	BotToken   = "8424913938:AAH_gr6L8c1UMFyCXubApgdsB0ZbGtKXbrw"
-	WeatherKey = "fba0dd4cca49587c78358e9fd0bcbd1e"
+	BotToken   = "YourBotToken"
+	WeatherKey = "YourOpenWeatherKey"
 )
 
 func init() {
@@ -156,4 +156,5 @@ func main() {
 
 	log.Println("✅ 8 ta funksiyali bot ishga tushdi!")
 	b.Start()
+
 }
