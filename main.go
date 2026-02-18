@@ -16,8 +16,8 @@ import (
 // --- KONFIGURATSIYA ---
 const (
 	// MUHIM: @BotFather dan olingan yangi tokenni shu yerga qo'ying.
-	BotToken   = "YourBotToken"
-	WeatherKey = "YourOpenWeatherKey"
+	BotToken   = "8424913938:AAH_gr6L8c1UMFyCXubApgdsB0ZbGtKXbrw"
+	WeatherKey = "fba0dd4cca49587c78358e9fd0bcbd1e"
 )
 
 func init() {
@@ -158,3 +158,4 @@ func main() {
 	b.Start()
 
 }
+
